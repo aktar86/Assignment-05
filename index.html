@@ -95,7 +95,6 @@
                         </div>
 
                         <div id="history-container">
-                            <!-- update History here  -->
                         </div> 
                     </div>
                 </div>
@@ -123,7 +122,7 @@
 
             // update call history here
             const title = document.getElementById('fire-title').innerText;
-            const number = document.getElementById('fire-number').innerText;
+            const number = document.getElementById('fire-Service-number').innerText;
 
             // time function here
             const time = getTime();
@@ -145,7 +144,7 @@
 
             // history-container
             const historyContainer = document.getElementById('history-container');
-            historyContainer.appendChild(newCard); 
+            historyContainer.appendChild(newCard);
         })
 
         // clear log history 
@@ -173,14 +172,14 @@
         })
 
 
-        
+
         // heart count 
-        document.getElementById('heart-btn').addEventListener('click', function(){
+        document.getElementById('heart-btn').addEventListener('click', function () {
             const heartCount = document.getElementById('heart-count').innerText;
-            const heartCountNumber = parseInt(heartCount);
-            heartCountNumber++
+            let heartCountNumber = parseInt(heartCount); // let use korlam
+            heartCountNumber++; // value increase
             document.getElementById('heart-count').innerText = heartCountNumber;
-        })
+        });
 
 
 
