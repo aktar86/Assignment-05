@@ -18,32 +18,32 @@
 <body>
     <header class="w-full">
         <div class="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-10 py-3 sm:py-5">
-            <div class="flex flex-col sm:flex-row justify-start items-center">
-                <img class="w-20 h-20 mr-4" src="./assets/logo.png" alt="">
-                <h1 class="font-bold text-[2rem] text-center sm:text-left text-[#006747] leading-10">Emergency <br />
+            <div class="flex flex-row sm:flex-row sm:justify-start items-center">
+                <img class="w-15 h-15 md:w-20 md:h-20 mr-4" src="./assets/logo.png" alt="">
+                <h1 class="font-bold text-[1.5rem] md:text-[2rem] text-left text-[#006747] leading-7 md:leading-10">Emergency <br />
                     Service</h1>
             </div>
 
 
             <div class="flex justify-between items-center gap-2 p-5">
                 <div class=" bg-[#41FF6B]/10 px-6 py-2 rounded-full">
-                    <h1 class="text-[1rem] font-bold">0 <span class="ml-1"><i
+                    <h1 class="text-[1rem] font-bold"><span id="heart-count">0</span> <span class="ml-1"><i
                                 class="fa-solid text-red-500 fa-heart"></i></span>
                     </h1>
                 </div>
                 <div class=" bg-[#41FF6B]/10 px-6 py-2 rounded-full">
-                    <h1 class="text-[1rem] font-bold">100<span class="ml-1"><i
+                    <h1 class="text-[1rem] font-bold"><span id="available-coin">100</span> <span class="ml-1"><i
                                 class=" text-orange-500 fa-solid fa-coins"></i></span>
                     </h1>
                 </div>
                 <div class=" bg-[#00A63E] px-6 py-2 rounded-full">
-                    <h1 class=" text-white font-bold text-[1rem]">2<span class="ml-3">Copy</i></span></h1>
+                    <h1 class=" text-white font-bold text-[1rem]"><span id="copy-count">2</span> <span class="ml-3">Copy</i></span></h1>
                 </div>
             </div>
         </div>
     </header>
     <main ">
-        <section class=" w-full h-[239px] [background:linear-gradient(to_right,#013223,#006747,#013223)] pt-5">
+        <section class=" w-full h-auto md:h-[239px] [background:linear-gradient(to_right,#013223,#006747,#013223)] p-5 md:pt-5">
         <div>
             <img class="w-24 h-24 mx-auto" src="./assets/logo-dark.png" alt="">
             <h1 class="text-[2.5rem] text-white text-center font-bold">Emergency Service Directory</h1>
@@ -54,42 +54,151 @@
         </section>
 
         <section class="bg-[#F5FFF6]">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 p-5">
+            <div class="card-container grid grid-cols-1 md:grid-cols-4 gap-4 p-4 sm:p-10 ">
                 <!-- Left side (cards) -->
-                <div class="col-span-1 md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="col-span-1  md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-4 ">
+
+       
                     <!-- card 1 -->
-                    <div class="max-w-lg p-3 rounded-xl shadow-lg">
-                        <div class="flex justify-between items-center">
+                    <div class="max-w-lg max-h-[360px] p-5 rounded-xl bg-white  shadow-lg flex flex-col justify-center items-start">
+                        <div class=" w-full flex justify-between items-center">
                             <img class="w-12 h-12" src="./assets/emergency.png" alt="">
-                            <span><i class="fa-regular fa-heart text-[30px] cursor-pointer"></i></span>
+                            <span id="heart-btn"><i class="fa-regular fa-heart text-[30px] cursor-pointer"></i></span>
                         </div>
                         <div class="my-3">
-                            <h1 class="font-bold text-[20px] ">National Emergency Number</h1>
-                            <p>National Emergency</p>
+                            <h1 id="fire-title" class="font-bold text-[24px] ">Fire Service Number</h1>
+                            <p class="text-[#5C5C5C] text-lg">Fire Service</p>
                         </div>
                         <div>
-                            <h1 class="font-bold text-[2rem] mb-2">999</h1>
-                            <p class=" w-20 text-center p-3 rounded-full bg-[#F2F2F2]">All</p>
+                            <h1 id="fire-Service-number" class="font-bold text-[2rem] mb-2">999</h1>
+                            <p class=" w-20 text-center p-3 rounded-full bg-[#F2F2F2]">Fire</p>
                         </div>
-                        <div class="grid grid-cols-2 gap-2 justify-between mt-5">
-                            <button class="border border-[#D4D6D5] p-1 rounded-lg"> <span><i
+                        <div class=" w-full grid grid-cols-2 gap-2 justify-between mt-5">
+                            <button id="fire-number-copy" class="border border-[#5C5C5C] p-2 cursor-pointer rounded-lg text-[#5C5C5C] text-[20px]"> <span><i
                                         class="fa-regular fa-copy"></i></span> Copy</button>
-                            <button class=" p-1 rounded-lg bg-green-500 text-white"> <span><i
+                            <button id="fire-call-btn" class=" p-2 cursor-pointer rounded-lg bg-green-500 text-white text-[20px]"> <span><i
                                         class="fa-solid fa-phone"></i></span> Call</button>
                         </div>
                     </div>
-
-
+                    <!-- card End her -->
                 </div>
-
 
                 <!-- sidebar  -->
                 <div>
                     <!-- Right side (big column) -->
-                    <div class="bg-yellow-300 h-full md:h-auto">Big Column</div>
+                     <!-- parent -->
+                    <div class="bg-white h-auto md:h-full p-10 rounded-lg shadow-lg">
+
+                        <div class="h-auto flex justify-between items-center mb-5 bg-[#FAFAFA] p-5 rounded-lg">
+                            <h1 class="text-[1.5rem] font-bold"><span><i class="fa-regular text-[#5C5C5C] fa-clock mr-2"></i></span>Call History</h1>
+                            <button id="clear-log-btn" class="text-xl text-white bg-green-500 px-10 py-3 rounded-full cursor-pointer ">Clear</button>
+                        </div>
+
+                        <div id="history-container">
+                            <!-- update History here  -->
+                        </div> 
+                    </div>
                 </div>
         </section>
     </main>
+    
+    
+    
+    
+    <script>
+        
+        document.getElementById('fire-call-btn').addEventListener('click', function(){
+            const coin = document.getElementById('available-coin').innerText;
+            const coinNumber = parseInt(coin)
+            if (coinNumber < 20) {
+                alert("You don’t have enough coins to continue.");
+                return;
+            }
+            else{
+                alert('Call ongoin');
+            }
+            const upDateAvailableCoin = coinNumber - 20;
+            document.getElementById('available-coin').innerText = upDateAvailableCoin;
+
+
+            // update call history here
+            const title = document.getElementById('fire-title').innerText;
+            const number = document.getElementById('fire-number').innerText;
+
+            // time function here
+            const time = getTime();
+
+            // create new Card
+            const newCard = document.createElement('div');
+            newCard.className = "flex justify-between items-center bg-[#FAFAFA] p-5 rounded-lg mb-5";
+
+            // innerHTML Set
+            newCard.innerHTML = `
+                        <div>
+                            <h1 class="font-bold text-2xl">${title}</h1>
+                            <p  class="text-xl">${number}</p>
+                        </div>
+                        <div>
+                            <p class="text-xl">${time}</p>
+                        </div>
+            `;
+
+            // history-container
+            const historyContainer = document.getElementById('history-container');
+            historyContainer.appendChild(newCard);
+
+            
+        })
+
+        // clear log history 
+        document.getElementById('clear-log-btn').addEventListener('click', function(){
+            // console.log('clear button clicked')
+            document.getElementById('history-container').innerHTML = '';
+        })
+
+        //service number copy button 
+        document.getElementById('fire-number-copy').addEventListener('click', function(){
+            const number = document.getElementById('fire-Service-number').innerText;
+            navigator.clipboard.writeText(number)
+            .then(() =>{
+                alert("Number Copied Successfully: " + number)
+            }).catch(err => {
+                console.error("Copy failed: ", err);
+            })
+
+            // copy-count
+            const copyCount = document.getElementById('copy-count').innerText;
+            const copyCountNumber = parseInt(copyCount)
+            let copyCountIncrese = copyCountNumber;
+            copyCountIncrese++
+            document.getElementById('copy-count').innerText = copyCountIncrese;
+        })
+        // heart count 
+        heart-count
+
+
+
+        // time function
+        function getTime(){
+            let h = new Date().getHours();
+            let m = new Date().getMinutes();
+            let s = new Date().getSeconds();
+
+            // am/pm check
+            let ampm;
+            if(h >= 12){ ampm = 'PM';} else{  ampm = 'AM';}
+
+            // minutes check
+            if(m < 10){ m = "0" + m;} else{m = m.toString();}
+
+            // second check
+            if(s < 10){s = "0" + s;} else{s = s.toString();}
+
+            const time = h + ":" + m + ":" + s + ' ' + ampm;
+            return time;
+        }
+    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
