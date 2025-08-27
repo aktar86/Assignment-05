@@ -145,9 +145,7 @@
 
             // history-container
             const historyContainer = document.getElementById('history-container');
-            historyContainer.appendChild(newCard);
-
-            
+            historyContainer.appendChild(newCard); 
         })
 
         // clear log history 
@@ -173,8 +171,16 @@
             copyCountIncrese++
             document.getElementById('copy-count').innerText = copyCountIncrese;
         })
+
+
+        
         // heart count 
-        heart-count
+        document.getElementById('heart-btn').addEventListener('click', function(){
+            const heartCount = document.getElementById('heart-count').innerText;
+            const heartCountNumber = parseInt(heartCount);
+            heartCountNumber++
+            document.getElementById('heart-count').innerText = heartCountNumber;
+        })
 
 
 
