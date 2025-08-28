@@ -1,4 +1,4 @@
-# JavaScript Concepts - Notes
+# JavaScript Answers
 
 ## Ans-01: Difference between getElementById, getElementsByClassName, querySelector, and querySelectorAll
 
