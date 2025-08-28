@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Contact Service</title>
+    <title>Emergency-Hotline</title>
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- daisy UI cdn -->
@@ -70,8 +70,8 @@
                             <span class="heart"><i class="fa-regular fa-heart text-[30px] cursor-pointer"></i></span>
                         </div>
                         <div class="my-3">
-                            <h1 id="national-title" class="font-bold text-[20px] ">National Emergency Number</h1>
-                            <p class="text-[#5C5C5C] text-lg">National Emergency</p>
+                            <h1 id="national-title" class="font-bold text-[20px] ">National Helpline Number</h1>
+                            <p id="national-text" class="text-[#5C5C5C] text-lg">National</p>
                         </div>
                         <div>
                             <h1 id="national-Service-number" class="font-bold text-[2rem] mb-2">999</h1>
@@ -97,10 +97,10 @@
                         </div>
                         <div class="my-3">
                             <h1 id="police-title" class="font-bold text-[20px] ">Police Helpline Number</h1>
-                            <p class="text-[#5C5C5C] text-lg">Police</p>
+                            <p id="police-text" class="text-[#5C5C5C] text-lg">Police</p>
                         </div>
                         <div>
-                            <h1 id="police-service-number" class="font-bold text-[2rem] mb-2">999</h1>
+                            <h1 id="police-Service-number" class="font-bold text-[2rem] mb-2">999</h1>
                             <p class=" w-20 text-center p-3 rounded-full bg-[#F2F2F2]">Police</p>
                         </div>
                         <div class=" w-full grid grid-cols-2 gap-2 justify-between mt-5">
@@ -118,12 +118,12 @@
                     <div
                         class="max-w-lg max-h-[360px] p-5 rounded-xl bg-white  shadow-lg flex flex-col justify-center items-start">
                         <div class=" w-full flex justify-between items-center">
-                            <img class="w-12 h-12" src="./assets/emergency.png" alt="">
+                            <img class="w-12 h-12" src="./assets/fire-service.png" alt="">
                             <span class="heart"><i class="fa-regular fa-heart text-[30px] cursor-pointer"></i></span>
                         </div>
                         <div class="my-3">
                             <h1 id="fire-title" class="font-bold text-[20px] ">Fire Service Number</h1>
-                            <p class="text-[#5C5C5C] text-lg">Fire Service</p>
+                            <p id="fire-text" class="text-[#5C5C5C] text-lg">Fire Service</p>
                         </div>
                         <div>
                             <h1 id="fire-Service-number" class="font-bold text-[2rem] mb-2">999</h1>
@@ -144,12 +144,12 @@
                     <div
                         class="max-w-lg max-h-[360px] p-5 rounded-xl bg-white  shadow-lg flex flex-col justify-center items-start">
                         <div class=" w-full flex justify-between items-center">
-                            <img class="w-12 h-12" src="./assets/emergency.png" alt="">
+                            <img class="w-12 h-12" src="./assets/ambulance.png" alt="">
                             <span class="heart"><i class="fa-regular fa-heart text-[30px] cursor-pointer"></i></span>
                         </div>
                         <div class="my-3">
                             <h1 id="ambulance-title" class="font-bold text-[20px] ">Ambulance Service</h1>
-                            <p class="text-[#5C5C5C] text-lg">Ambulance</p>
+                            <p id="ambulance-text" class="text-[#5C5C5C] text-lg">Ambulance</p>
                         </div>
                         <div>
                             <h1 id="ambulance-Service-number" class="font-bold text-[2rem] mb-2">1994-999999</h1>
@@ -170,12 +170,12 @@
                     <div
                         class="max-w-lg max-h-[360px] p-5 rounded-xl bg-white  shadow-lg flex flex-col justify-center items-start">
                         <div class=" w-full flex justify-between items-center">
-                            <img class="w-12 h-12" src="./assets/emergency.png" alt="">
+                            <img class="w-12 h-12" src="./assets/woman.png" alt="">
                             <span class="heart"><i class="fa-regular fa-heart text-[30px] cursor-pointer"></i></span>
                         </div>
                         <div class="my-3">
                             <h1 id="womanchild-title" class="font-bold text-[20px] ">Women & Child Helpline</h1>
-                            <p class="text-[#5C5C5C] text-lg">Women & Child Helpline</p>
+                            <p id="womanchild-text" class="text-[#5C5C5C] text-lg">Women & Child Helpline</p>
                         </div>
                         <div>
                             <h1 id="womanchild-Service-number" class="font-bold text-[2rem] mb-2">109</h1>
@@ -196,12 +196,12 @@
                     <div
                         class="max-w-lg max-h-[360px] p-5 rounded-xl bg-white  shadow-lg flex flex-col justify-center items-start">
                         <div class=" w-full flex justify-between items-center">
-                            <img class="w-12 h-12" src="./assets/emergency.png" alt="">
+                            <img class="w-12 h-12" src="./assets/justice.png" alt="">
                             <span class="heart"><i class="fa-regular fa-heart text-[30px] cursor-pointer"></i></span>
                         </div>
                         <div class="my-3">
                             <h1 id="corruption-title" class="font-bold text-[20px] ">Anti-Corruption Helpline</h1>
-                            <p class="text-[#5C5C5C] text-lg">Anti-Corruption</p>
+                            <p id="corruption-text" class="text-[#5C5C5C] text-lg">Anti-Corruption</p>
                         </div>
                         <div>
                             <h1 id="corruption-Service-number" class="font-bold text-[2rem] mb-2">106</h1>
@@ -222,22 +222,22 @@
                     <div
                         class="max-w-lg max-h-[360px] p-5 rounded-xl bg-white  shadow-lg flex flex-col justify-center items-start">
                         <div class=" w-full flex justify-between items-center">
-                            <img class="w-12 h-12" src="./assets/emergency.png" alt="">
+                            <img class="w-12 h-12" src="./assets/flash.png" alt="">
                             <span class="heart"><i class="fa-regular fa-heart text-[30px] cursor-pointer"></i></span>
                         </div>
                         <div class="my-3">
-                            <h1 id="Electricity-title" class="font-bold text-[20px] ">Electricity Helpline</h1>
-                            <p class="text-[#5C5C5C] text-lg">Electricity Outage</p>
+                            <h1 id="electricity-title" class="font-bold text-[20px] ">Electricity Helpline</h1>
+                            <p id="electricity-text" class="text-[#5C5C5C] text-lg">Electricity Outage</p>
                         </div>
                         <div>
-                            <h1 id="Electricity-Service-number" class="font-bold text-[2rem] mb-2">16216</h1>
+                            <h1 id="electricity-Service-number" class="font-bold text-[2rem] mb-2">16216</h1>
                             <p class=" text-center p-3 rounded-full bg-[#F2F2F2]">Electricity</p>
                         </div>
                         <div class=" w-full grid grid-cols-2 gap-2 justify-between mt-5">
-                            <button id="Electricity-number-copy"
+                            <button id="electricity-number-copy"
                                 class="border border-[#5C5C5C] p-2 cursor-pointer rounded-lg text-[#5C5C5C] text-[20px]">
                                 <span><i class="fa-regular fa-copy"></i></span> Copy</button>
-                            <button id="Electricity-call-btn"
+                            <button id="electricity-call-btn"
                                 class=" p-2 cursor-pointer rounded-lg bg-green-500 text-white text-[20px]"> <span><i
                                         class="fa-solid fa-phone"></i></span> Call</button>
                         </div>
@@ -248,12 +248,12 @@
                     <div
                         class="max-w-lg max-h-[360px] p-5 rounded-xl bg-white  shadow-lg flex flex-col justify-center items-start">
                         <div class=" w-full flex justify-between items-center">
-                            <img class="w-12 h-12" src="./assets/emergency.png" alt="">
+                            <img class="w-12 h-12" src="./assets/brac.png" alt="">
                             <span class="heart"><i class="fa-regular fa-heart text-[30px] cursor-pointer"></i></span>
                         </div>
                         <div class="my-3">
                             <h1 id="brack-title" class="font-bold text-[20px] ">Brack Helpline</h1>
-                            <p class="text-[#5C5C5C] text-lg">Brack</p>
+                            <p id="brack-text" class="text-[#5C5C5C] text-lg">Brack</p>
                         </div>
                         <div>
                             <h1 id="brack-Service-number" class="font-bold text-[2rem] mb-2">16445</h1>
@@ -274,12 +274,12 @@
                     <div
                         class="max-w-lg max-h-[360px] p-5 rounded-xl bg-white  shadow-lg flex flex-col justify-center items-start">
                         <div class=" w-full flex justify-between items-center">
-                            <img class="w-12 h-12" src="./assets/emergency.png" alt="">
+                            <img class="w-12 h-12" src="./assets/Bangladesh-Railway.png" alt="">
                             <span class="heart"><i class="fa-regular fa-heart text-[30px] cursor-pointer"></i></span>
                         </div>
                         <div class="my-3">
                             <h1 id="railway-title" class="font-bold text-[20px] ">Bangladesh Railway Helpline </h1>
-                            <p class="text-[#5C5C5C] text-lg">Bangladesh Railway</p>
+                            <p id="railway-text" class="text-[#5C5C5C] text-lg">Bangladesh Railway</p>
                         </div>
                         <div>
                             <h1 id="railway-Service-number" class="font-bold text-[2rem] mb-2">163</h1>
