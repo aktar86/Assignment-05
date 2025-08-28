@@ -16,7 +16,7 @@
 
 ---
 
-## Ans-02: create and insert a new element into the DOM
+## Ans-02: Create and insert a new element into the DOM
 
 ```html
 <body>
