@@ -45,7 +45,7 @@ Example: _Button click_ করলে প্রথমে _button_ এর _handler
 
 ## Ans-5: Difference between preventDefault() and stopPropagation()-
 
-1. `preventDefault(): Event এর default behavior আচরণ বন্ধ করে।`
+1. `preventDefault(): Event এর default behavior বন্ধ করে।`
    যেমন: <a> link click করলে normally page navigate করে, কিন্তু preventDefault() দিলে navigate বন্ধ হবে।
 
 2. `stopPropagation(): Event bubbling বন্ধ করে।`
